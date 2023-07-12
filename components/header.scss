@@ -1,0 +1,16 @@
+.header {
+  width: 100vw;
+  height: 7vh;
+    
+    .navbar-toggler{
+        background-color: #fafafa;
+    }
+    
+}
+.navbar-nav .nav-link{
+    color: $gray-100;
+    background-color: $blue;
+    display: inline-block;
+    gap: 10px;
+    
+}

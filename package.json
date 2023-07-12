@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss css/style.css -w --no-source-map -s compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
