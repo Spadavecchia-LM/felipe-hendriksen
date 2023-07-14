@@ -1,84 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felipe Rodolfo Hendrikse</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header sticky-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#introduction">Introduction</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#publications">Publications</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experience">Work Experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#achievements">Achievements</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Soft Skills</a>
-                  </li>
 
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-      <section class="biography">
-        <div>
-          <h2 id="introduction">Felipe Rodolfo Hendriksen</h2>
-          <h1><em>Professor in Humanities</em></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRD | WELCOME</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="nav-brand">Felipe Rodolfo Hendriksen</a>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Publications</a></li>
+        <li><a href="#experience" class="nav-link">About Me</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="introduction">
+    <div class="introduction_container">
+      <span class="introduction_hi">Hi!</span>
+      <h1 class="introduction_title">I am Felipe Rodolfo Hendriksen, <span id="profession">Professor in
+          Humanities.</span></h1>
+      <p class="introduction_text"></p>
+      <a href="#experience"><button class="introduction_btn">More about me</button></a>
+      
+    </div>
+
+    <section class="biography">
+      <div class="about-card">
+        <i class="bi bi-mortarboard"></i>
+        <h2 class="about-card_title">Pontificia Universidad Católica Argentina</h2>
+        <h4 class="about-card_subtitle">Professor in Humanities</h4>
+      </div>
+    </section>
+
+    <section class="work_experience">
+      <h2 class="title" id="experience">WORK EXPERIENCE</h2>
+        <div class="cards_container">
         </div>
-        <div>
-          <img src="./img/fotoPerfil.png" alt="profile_pic" width="250px" />
-          <h2>Graduated from Pontificia Universidad Católica Argentina</h2>
-          <p>
-            Interested in Comic Studies, Popular Culture Studies, Literary
-            Editing & Publishing, Translation from English to Spanish and
-            vice-versa, and creative Writing
-          </p>
-        </div>
-      </section>
+  
+      </div>
+    </section>
 
-      <section class="publications">
-        <div class="Literary">
-          <h2 id="publications">PUBLISHED LITERARY TEXTS</h2>
-          <div class="pub_cards_container"></div>
-        </div>
-        <p>
-          See all my published texts at my
-          <a
-            href="https://www.linkedin.com/in/feliglobo/details/publications/"
-            target="_blank"
-            >Linkedin</a
-          >
-          profile
-        </p>
-      </section>
+    <section class="skills">
+      <h2 class="title" id="skills">SOFT SKILLS</h2>
+      <div class="skills_container"></div>
+    </section>
 
-      <section class="work_experience">
-        <h2 id="experience">WORK EXPERIENCE</h2>
-        <div class="work_experience_cards_container">
-        </div>
-      </section>
-
-
-      <section class="achievements">
-        <h2 id="achievements">ACHIEVEMENTS</h2>
+    <section class="achievements">
+      <div class="achievements_container">
+        <h2 class="title" id="achievements">ACHIEVEMENTS</h2>
         <ul>
           <li>
             Certificate from Instituto de Idiomas NEONE, Japanese Level 2 -
@@ -121,15 +102,16 @@
           </li>
           <li>Pass with Merit in Key English Test (KET), 2008.</li>
         </ul>
-      </section>
-      <section class="skills">
-        <h2 id="skills">SOFT SKILLS</h2>
-        <ul></ul>
-      </section>
-    </main>
-    <footer class="contact">
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+      </div>
+     
+
+    </section>
+
+
+  </main>
+    
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

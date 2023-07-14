@@ -1,0 +1,49 @@
+
+.introduction{
+    width: 100vw;
+    height: 100vh;
+    background-color: $gray-100;
+    display: grid;
+    place-items: center;
+}
+.introduction_container{
+    width: 80%;
+    height: 80%;
+    margin: 10% 10%;
+}
+.introduction_hi{
+    font-size: 2rem;
+    color: $gray-700;
+}
+.introduction_title{
+    font-size: 2rem;
+    text-align: left;
+    color: $gray-900;
+    padding: 20px 0;
+}
+#profession{
+    color: $blue;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.introduction_text{
+    padding: 20px 0;
+    color: $gray-700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.introduction_btn{
+    align-self: center;
+    margin: 20px auto;
+    padding: 12px 24px;
+    border: 1px solid $blue;
+    background-color: $gray-100;
+    color: $blue;  
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.introduction_btn:hover{
+    background-color: $blue;
+    color: $white
+}

@@ -1,0 +1,97 @@
+.biography{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.about-card{
+    height: 50%;
+    width: 80%;
+    margin: auto 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+-webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+}
+.about-card_title, .about-card_subtitle{
+    text-align: center;
+}
+.about-card .bi{
+    font-size: 48px;
+    color: $blue;
+}
+.work_experience{
+    width: 100vw;
+}
+.work_experience .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cards_container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+        .about-card{
+            margin: 20px auto;
+            
+        }
+}
+.achievements{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 10%;
+        justify-content: center;
+    }
+    & ul li{
+        margin: 15px 0;
+        list-style: disc;
+        font-size: 0.9rem;
+    }
+}
+.achievements_container h2{
+        text-orientation:upright;
+        writing-mode: vertical-rl;
+}
+
+
+
+.skills{
+    width: 100vw;
+}
+.skills_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 80%;
+    margin: 50px 10%;
+
+}
+.skill-card{
+    min-height: 150px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
+    
+}
+@media (max-width:1024px){
+    .achievements_container h2{
+        writing-mode: horizontal-tb;
+}
+}

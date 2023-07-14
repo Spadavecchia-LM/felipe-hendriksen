@@ -5,3 +5,16 @@
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+body{
+    background-color: $gray-100;
+}
+.title{
+    text-align: center;
+    margin: 50px;
+}
+.bi{
+    font-size: 48px;
+}
