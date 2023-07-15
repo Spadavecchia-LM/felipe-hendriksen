@@ -12,11 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;   
-    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
--webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
--moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
-}
+    align-items: center;   }
 .about-card_title, .about-card_subtitle{
     text-align: center;
 }
@@ -26,23 +22,19 @@
 }
 .work_experience{
     width: 100vw;
+    height: 100vh;
 }
 .work_experience .title{
     text-align: center;
     margin-bottom: 50px;
 }
 .cards_container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-        .about-card{
-            margin: 20px auto;
-            
-        }
+    flex-direction: column;
 }
 .achievements{
-    height: 100vh;
     width: 100vw;
     display: grid;
     place-items: center;
@@ -63,9 +55,6 @@
         text-orientation:upright;
         writing-mode: vertical-rl;
 }
-
-
-
 .skills{
     width: 100vw;
 }
@@ -85,9 +74,6 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
-    -webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
-    -moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.45);
     
 }
 @media (max-width:1024px){

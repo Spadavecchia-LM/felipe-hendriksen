@@ -1,7 +1,6 @@
 
 .introduction{
     width: 100vw;
-    height: 100vh;
     background-color: $gray-100;
     display: grid;
     place-items: center;
@@ -12,7 +11,7 @@
     margin: 10% 10%;
 }
 .introduction_hi{
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: $gray-700;
 }
 .introduction_title{
@@ -30,7 +29,7 @@
 .introduction_text{
     padding: 20px 0;
     color: $gray-700;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }
 .introduction_btn{

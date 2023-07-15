@@ -1,0 +1,68 @@
+footer{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.contact{
+    height: 50%;
+    a{
+        color: $gray-800;
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+    .social-media{
+        margin:50px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & a{
+            margin: 0 20px;
+            & i{
+                font-size: 24px;
+            }
+        }
+
+    }
+
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & label{
+        font-size: 1rem;
+    }
+    & input{
+        margin: 20px auto;
+        height: 18px;
+        width: 100%;
+        font-size: 0.8rem;
+        background-color: transparent;
+        border-style: none;
+        border: 1px solid $black;
+        padding: 6px;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            font-style: italic;
+            color: $gray-500;
+        }
+    }
+    & button{
+        padding: 8px 16px;
+        width: 40%;
+        border: 1px solid $blue;
+        background-color: transparent;
+        color: $blue;
+        transition: 0.3s;
+        &:hover{
+            background-color: $blue;
+            color: white;
+        }
+    }
+}
