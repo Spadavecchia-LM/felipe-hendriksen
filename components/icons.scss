@@ -1,15 +1,4 @@
-#detail .bi{
-    color:$purple;
-}
-#diligence .bi{
-    color:$blue;
-}
-#speaker .bi{
-    color:$red;
-}
-#book .bi{
-    color: $gray-900;
-}
-#knowledge .bi{
+#book .bi, #diligence .bi, #knowledge .bi, #speaker .bi, #detail .bi, #translate .bi{
     color: $green;
+    font-size: 3rem;
 }

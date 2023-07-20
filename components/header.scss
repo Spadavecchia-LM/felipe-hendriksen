@@ -58,15 +58,17 @@ header {
     }
 
     .hamburger:active .bar:nth-child(2) {
-        opacity: 0;
+        transform: rotate(90deg) scale(2);
     }
 
     .hamburger:active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: rotate(90deg) scale(2);
+        
     }
 
     .hamburger:active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform:rotate(90deg) scale(2);
+        
     }
 
     .nav-menu {

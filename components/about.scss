@@ -25,8 +25,8 @@
     height: 100vh;
 }
 .work_experience .title{
-    text-align: center;
-    margin-bottom: 50px;
+    margin: 30px auto;
+
 }
 .cards_container{
     width: 90%;
@@ -40,44 +40,35 @@
     place-items: center;
     &_container{
         display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        margin: 0 10%;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
         justify-content: center;
     }
     & ul li{
         margin: 15px 0;
-        list-style: disc;
+        list-style: circle;
         font-size: 0.9rem;
     }
 }
-.achievements_container h2{
-        text-orientation:upright;
-        writing-mode: vertical-rl;
-}
-.skills{
-    width: 100vw;
-}
 .skills_container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    width: 80%;
-    margin: 50px 10%;
+    width: 100vw;
 
 }
+.skills_cards_container{
+    display: grid;
+    place-items: center;
+}
 .skill-card{
-    min-height: 150px;
-    min-width: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.skill-card h4{
+    font-size: 14px;
+    color: $gray-700;
     text-align: center;
     
-}
-@media (max-width:1024px){
-    .achievements_container h2{
-        writing-mode: horizontal-tb;
-}
+    
 }
