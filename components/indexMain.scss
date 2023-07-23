@@ -36,6 +36,7 @@
   color: $blue;
   border-radius: 2px;
   transition: 0.5s;
+  font-size: 1rem;
   cursor:pointer;
 }
 .introduction_btn:hover {
@@ -95,6 +96,7 @@
       & a {
         color: $white;
         width: 100%;
+        font-size: 1rem;
       }
       &:hover {
         background-color: $indigo;
@@ -106,14 +108,15 @@
     height: 300px;
     display: grid;
     place-items: center;
-    background-color: $blue;
-    color: $white;
-    & a{
-        color:$gray-900;
-        text-decoration-line: underline;
-        text-decoration-thickness: 2px;
-        text-decoration-style: wavy;
-        cursor: pointer;
+    text-align: center;
+    background-image: url(../img/stacked-waves-haikei\ \(1\).svg);
+    background-size: cover;
+    background-position: center center;
+    color: $gray-200;
+    & p a{
+      color: $gray-200;
+      text-decoration: underline;
+      letter-spacing: 2px;
     }
   }
   

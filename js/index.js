@@ -5,7 +5,7 @@ const publications = [
         description: `Poem “Nuestras Nadas Poco Difieren“ published in <em>lit.202</em>, Issue Three, Autumn 2022`,
         url: "https://lit202.org/read/hendriksen-nuestras-nadas-poco-difieren",
         date: "July 24, 2022",
-        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065002/felipe/Nuestras_Nadas_Poco_Difieren_1_jxqnyu.png"
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690143755/felipe/nuestras%20nadas.jpg"
     },
     {
         id: 2,
@@ -13,21 +13,21 @@ const publications = [
         description: `Flash fiction piece “Trying to Explain a Dream I Had to My Psychologist” published in <em>Press Pause Press</em>, Volume 6, April 2022.`,
         url: "https://www.presspausepress.org/felipe-h",
         date: "",
-        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065153/felipe/Nuestras_Nadas_Poco_Difieren_3_f8n2ir.png"
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690143755/felipe/psicologo.webp"
     },
     {
         id: 3,
         title: "Objectivity in Art",
         description: `Flash fiction piece “Objectivity in Art” published in Coastal Shelf, Spring Annual #1, 2022.`,
         url: "https://coastalshelf.com/spring-annual-2022-objectivity-in-art-by-felipe-rodolfo-hendriksen",
-        image: "https://res.cloudinary.com/leoms96/image/upload/v1690065064/felipe/Nuestras_Nadas_Poco_Difieren_2_r7a7vo.png"
+        image: "https://res.cloudinary.com/leoms96/image/upload/v1690143755/felipe/art.jpg"
     },{
         id:4,
         title: "The Unexpected Witness",
         description: `Flash fiction piece “The Unexpected Witness” published in <em>Press Pause Press</em>, Volume 6, April 2022.`,
         url: "https://www.presspausepress.org/felipe-h",
         date:"",
-        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065218/felipe/Nuestras_Nadas_Poco_Difieren_4_aqfptb.png"
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690143755/felipe/unexpected%20witness.png"
 
     }
         
