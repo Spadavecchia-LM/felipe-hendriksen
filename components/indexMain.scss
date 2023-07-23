@@ -32,7 +32,7 @@
   margin: 20px auto;
   padding: 12px 24px;
   border: 1px solid $blue;
-  background-color: $gray-100;
+  background-color: transparent;
   color: $blue;
   border-radius: 2px;
   transition: 0.5s;
@@ -42,9 +42,7 @@
   background-color: $blue;
   color: $white;
 }
-#aboutBtn {
-  margin-top: 100px;
-}
+
 
 .publications {
   width: 100vw;
