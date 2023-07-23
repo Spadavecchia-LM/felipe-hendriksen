@@ -3,6 +3,7 @@ footer{
     display: grid;
     place-items: center;
 }
+
 .contact{
     height: 50%;
     a{
@@ -37,9 +38,9 @@ footer{
         font-size: 1rem;
     }
     & input{
-        margin: 20px auto;
         height: 18px;
         width: 100%;
+        margin: 20px 0px;
         font-size: 0.8rem;
         background-color: transparent;
         border-style: none;

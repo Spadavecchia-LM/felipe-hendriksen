@@ -9,12 +9,17 @@ li{
     list-style: none;
 }
 body{
-    background-color: $gray-100;
+    width: 100vw;
+    background-color: $gray-200;
 }
+
 .title{
     text-align: center;
     margin: 50px;
 }
 .bi{
     font-size: 48px;
+}
+.hidden{
+    display: none;
 }

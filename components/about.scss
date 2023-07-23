@@ -1,32 +1,7 @@
 .biography{
-    width: 100vw;
     height: 100vh;
     display: grid;
     place-items: center;
-}
-.about-card{
-    height: 50%;
-    width: 80%;
-    margin: auto 10%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;   }
-.about-card_title, .about-card_subtitle{
-    text-align: center;
-}
-.about-card .bi{
-    font-size: 48px;
-    color: $blue;
-}
-.work_experience{
-    width: 100vw;
-    height: 100vh;
-}
-.work_experience .title{
-    margin: 30px auto;
-
 }
 .cards_container{
     width: 90%;
@@ -35,7 +10,6 @@
     flex-direction: column;
 }
 .achievements{
-    width: 100vw;
     display: grid;
     place-items: center;
     &_container{

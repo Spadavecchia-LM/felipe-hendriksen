@@ -4,21 +4,34 @@ const publications = [
         title: "Nuestras Nadas Poco Difieren",
         description: `Poem “Nuestras Nadas Poco Difieren“ published in <em>lit.202</em>, Issue Three, Autumn 2022`,
         url: "https://lit202.org/read/hendriksen-nuestras-nadas-poco-difieren",
-        date: "July 24, 2022"
+        date: "July 24, 2022",
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065002/felipe/Nuestras_Nadas_Poco_Difieren_1_jxqnyu.png"
     },
     {
         id: 2,
-        title: "Trying to Explain a Dream I Had to My Psychologist & The Unexpected Witness",
-        description: `Flash fiction pieces “Trying to Explain a Dream I Had to My Psychologist” and “The Unexpected Witness” published in <em>Press Pause Press</em>, Volume 6, April 2022.`,
+        title: "Trying to Explain a Dream I Had to My Psychologist",
+        description: `Flash fiction piece “Trying to Explain a Dream I Had to My Psychologist” published in <em>Press Pause Press</em>, Volume 6, April 2022.`,
         url: "https://www.presspausepress.org/felipe-h",
-        date: ""
+        date: "",
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065153/felipe/Nuestras_Nadas_Poco_Difieren_3_f8n2ir.png"
     },
     {
         id: 3,
         title: "Objectivity in Art",
         description: `Flash fiction piece “Objectivity in Art” published in Coastal Shelf, Spring Annual #1, 2022.`,
-        url: "https://coastalshelf.com/spring-annual-2022-objectivity-in-art-by-felipe-rodolfo-hendriksen"
+        url: "https://coastalshelf.com/spring-annual-2022-objectivity-in-art-by-felipe-rodolfo-hendriksen",
+        image: "https://res.cloudinary.com/leoms96/image/upload/v1690065064/felipe/Nuestras_Nadas_Poco_Difieren_2_r7a7vo.png"
+    },{
+        id:4,
+        title: "The Unexpected Witness",
+        description: `Flash fiction piece “The Unexpected Witness” published in <em>Press Pause Press</em>, Volume 6, April 2022.`,
+        url: "https://www.presspausepress.org/felipe-h",
+        date:"",
+        image:"https://res.cloudinary.com/leoms96/image/upload/v1690065218/felipe/Nuestras_Nadas_Poco_Difieren_4_aqfptb.png"
+
     }
+        
+
 ]
 const experience = [
     {
@@ -52,6 +65,7 @@ const typed = new Typed(introText, {
     showCursor: false,
     loop: false,
 })
+const workButtons = document.querySelectorAll(".btn_work")
 
 introText.innerHTML = ""
 
@@ -79,22 +93,37 @@ function renderPublications(arr) {
     arr.forEach(element => {
         document.querySelector(".pub_cards_container").innerHTML += `
     <div class="pub_card">
+    <img src=${element.image} alt=${element.title}>
     <h2>${element.title}</h2>
-    <button class="btn btn-primary"><a href=${element.url} target="_blank" class="text-light">visit</a></button>
+    <p>${element.description}</p>
+    <button><a href=${element.url} target="_blank">visit</a></button>
 `
     })
 }
 function renderExperience(arr) {
     arr.forEach(element => {
-        document.querySelector(".cards_container").innerHTML += `
-        <div class="about-card">
-            <h2 class="about-card_title">${element.task}</h2>
-            <h3 class="about-card_subtitle">${element.where}</h3>
-            <h4 class="about-card_subtitle">${element.time}</h4>
+        document.querySelector(".work_cards_container").innerHTML += `
+        <div class="work_card">
+            <h2>${element.task}</h2>
+            <button class="btn_work">View Full Info</button>
         </div>
+
         `
     })
 }
+setTimeout(() => {
+document.querySelector("#aboutBtn").classList.remove("hidden")
+anime({
+    targets:document.querySelector("#aboutBtn") ,
+    opacity: ["0%","100%"],
+    duration:5000,
+    direction: 'normal',
+    loop: false
+  });
+}, 4100)
+
+
+
 renderExperience(experience)
 renderPublications(publications)
 navBar()
