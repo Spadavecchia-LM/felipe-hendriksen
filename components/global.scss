@@ -4,6 +4,7 @@
 }
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     list-style: none;
@@ -11,11 +12,19 @@ li{
 body{
     width: 100vw;
     background-color: $gray-200;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-family: 'Roboto', sans-serif
 }
 
 .title{
     text-align: center;
     margin: 200px 0px;
+    background-color: $blue;
+    padding: 60px;
+    font-size: 1.8rem;
+    color: $gray-200;
 }
 .bi{
     font-size: 48px;

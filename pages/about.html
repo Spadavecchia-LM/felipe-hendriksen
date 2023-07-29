@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/style.css">
   <title>FRD | ABOUT ME</title>
@@ -12,11 +15,12 @@
 <body>
   <header>
     <nav class="navbar">
-      <a href ="../index.html" class="nav-brand">Felipe Rodolfo Hendriksen</a>
+      <a href="../index.html" class="nav-brand">Felipe Rodolfo Hendriksen</a>
       <ul class="nav-menu">
-        <li><a href="https://www.linkedin.com/in/feliglobo/details/publications/" target="_blank" class="nav-link">Publications</a></li>
-        <li><a href="" class="nav-link">About Me</a></li>
-        <li><a href="" class="nav-link">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/feliglobo/details/publications/" target="_blank"
+            class="nav-link">Publications</a></li>
+        <li><a href="./about.html" class="nav-link">About Me</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -27,18 +31,37 @@
   </header>
 
   <main>
-    <section class="biography">
-      <div class="about-card">
-        <i class="bi bi-mortarboard"></i>
-        <h2 class="about-card_title">Pontificia Universidad Católica Argentina</h2>
-        <h4 class="about-card_subtitle">Professor in Humanities</h4>
+    <section class="biography_container">
+      <div class="biography">
+        <div class="biography_img">
+          <img src="../img/felipe.jpeg" alt="felipe">
+        </div>
+        <div class="biography_p">
+          <p>Felipe Rodolfo Hendriksen is a Profesor en Letras student at Pontificia Universidad Católica Argentina,
+            with
+            a passion for comics, manga, anime, popular culture, and modern folklore. He has completed two exchange
+            programs in England and the United States, where he honed his English and Spanish skills and gained valuable
+            teaching and writing experience.
+          </p>
+          <p>
+            Currently, he is writing his thesis on Borges and heroism under the supervision of Dr. Javier Roberto
+            González, while also working as an adscripto a las cátedras de Literatura Española Medieval I y II at UCA.
+            He
+            has contributed to various literary publications as an editor, columnist, and writer, and has corrected
+            texts
+            for a testimonial book. He has multiple certifications and honors in English and academic performance and is
+            interested in pursuing further research and education in his field.
+
+          </p>
+        </div>
       </div>
     </section>
 
 
-    <section class="achievements">
+
+    <section>
       <h2 class="title">ACHIEVEMENTS</h2>
-      <ul class="achievements_container">
+      <ul class="achievements_container achievements">
         <li>
           Certificate from Instituto de Idiomas NEONE, Japanese Level 2 -
           NeoneFlex®, 2023.
@@ -81,11 +104,13 @@
         <li>Pass with Merit in Key English Test (KET), 2008.</li>
       </ul>
     </section>
-<section class="skills_container">
-  <h2 class="title">SKILLS</h2>
-  <div class="skills_cards_container"></div>
-  
-</section>
+
+
+    <section class="skills_container">
+      <h2 class="title">SKILLS</h2>
+      <div class="skills_cards_container"></div>
+
+    </section>
 
   </main>
 

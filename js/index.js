@@ -39,14 +39,14 @@ const experience = [
         task: "Teaching Assistant",
         where: "Pontifica Universidad Católica Argentina",
         time: "Present",
-        description: "LOREM IPSUM DOLOR LOREM IPSUM DOLOR LOREM IPSUM DOLOR"
+        description: "Chair in charge of Dr. Javier Roberto González (UCA-CONICET-Argentine Academy of Letters).Affiliation aimed at training in research applied to university teaching."
     },
     {
         id: "exp-2",
         task: "Part-time language and literature teacher",
         where: "Freelance",
         time: `Present`,
-        description: "asdasdadsadsadsadadsadsadsada"
+        description: "He gives private English and Spanish classes to foreigners."
 
     },
     {
@@ -54,7 +54,7 @@ const experience = [
         task: "Undergraduate Teaching Assistant",
         where: "Washington College - Chestertown, MD, United States of America",
         time: `From 01/2019 to 05/2019`,
-        description: ""
+        description: "He gave five weekly classes of Elementary and Intermediate Spanish to more than fifty university students."
     }
 ]
 
