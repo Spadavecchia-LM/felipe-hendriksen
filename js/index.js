@@ -69,6 +69,7 @@ const typed = new Typed(introText, {
     showCursor: false,
     loop: false,
 })
+const titulos = document.querySelectorAll(".title");
 
 
 introText.innerHTML = ""
@@ -96,7 +97,7 @@ function navBar() {
 function renderPublications(arr) {
     arr.forEach(element => {
         document.querySelector(".pub_cards_container").innerHTML += `
-    <div class="pub_card">
+    <div class="pub_card translate-left" data-sr>
     <img src=${element.image} alt=${element.title}>
     <h2>${element.title}</h2>
     <p>${element.description}</p>
@@ -107,11 +108,11 @@ function renderPublications(arr) {
 function renderExperience(arr) {
     arr.forEach(element => {
         document.querySelector(".work_cards_container").innerHTML += `
-        <div class="work_card" id=${element.id}>
+        <div class="work_card translate-left" data-sr id=${element.id}>
             <h2>${element.task}</h2>
             <h4>${element.where}</h4>
             <span>${element.time}</span>
-            <button class="btn_work" id=${element.id}>View Full Info</button>
+            <button class="btn_work" id=${element.id}>More Details</button>
         </div>
 
         `
@@ -146,17 +147,30 @@ function viewWorkInfo() {
             const workDescription = experience.filter(exp => exp.id === id)
 
             card.innerHTML = ""
-            anime({
-                targets: card,
-                rotateY: "360",
-            });
             setTimeout(() => {
-                card.innerHTML = `
-                <p>${workDescription[0].description}</p>
-                `
-            }, 250)
+           card.innerHTML = `
+           <p>${workDescription[0].description}</p>
+           `
+            }, 200)
 
         })
     })
 }
 viewWorkInfo()
+
+titulos.forEach(titulo => {
+    titulo.classList.add("fade-in")
+})
+
+
+ScrollReveal().reveal(".translate-left", {
+    distance: '100px', // Adjust this value as per your requirement
+    origin: 'left',    // Specify the direction from which the element should appear
+    duration: 1000,    // Duration of the animation
+    scale: 1,          // Set the initial scale (1 means no scaling)
+    viewFactor: 0.2,   // Percentage of the element's visibility before the animation is triggered
+    reset: false    
+})
+ScrollReveal().reveal(".fade-in", {delay:300})
+
+

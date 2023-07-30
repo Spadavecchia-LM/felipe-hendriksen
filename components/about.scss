@@ -40,11 +40,8 @@
 }
 
 .achievements_container {
-    display: flex;
-    flex-direction: column;
     width: 90%;
     margin: 0 5%;
-    align-items: flex-start;
 
 }
 
@@ -59,23 +56,30 @@
 }
 
 .skills_cards_container {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-
 .skill-card {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    width: 250px;
+    background-color: $gray-100;
 }
 
 .skill-card h4 {
     font-size: 14px;
     color: $gray-700;
     text-align: center;
-
-
+    padding: 10px;
+}
+.skill-card p{
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
 }
 @media (max-width:750px){
     .biography_img{

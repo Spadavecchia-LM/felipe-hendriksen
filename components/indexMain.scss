@@ -184,5 +184,11 @@
     border-radius: 2px;
     color: $black;
     cursor: pointer;
+    transition: 0.5s;
+  }
+  .btn_work:hover{
+    background-color: $blue;
+    color: white;
+    border: none;
   }
 }
