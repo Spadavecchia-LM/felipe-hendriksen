@@ -1,3 +1,4 @@
+
 const publications = [
     {
         id: 1,
@@ -70,6 +71,7 @@ const typed = new Typed(introText, {
     loop: false,
 })
 const titulos = document.querySelectorAll(".title");
+const formulario = document.querySelector("#contact_form")
 
 
 introText.innerHTML = ""
@@ -97,7 +99,7 @@ function navBar() {
 function renderPublications(arr) {
     arr.forEach(element => {
         document.querySelector(".pub_cards_container").innerHTML += `
-    <div class="pub_card translate-left" data-sr>
+    <div class="pub_card">
     <img src=${element.image} alt=${element.title}>
     <h2>${element.title}</h2>
     <p>${element.description}</p>
@@ -108,7 +110,7 @@ function renderPublications(arr) {
 function renderExperience(arr) {
     arr.forEach(element => {
         document.querySelector(".work_cards_container").innerHTML += `
-        <div class="work_card translate-left" data-sr id=${element.id}>
+        <div class="work_card" id=${element.id}>
             <h2>${element.task}</h2>
             <h4>${element.where}</h4>
             <span>${element.time}</span>
@@ -118,6 +120,7 @@ function renderExperience(arr) {
         `
     })
 }
+
 setTimeout(() => {
     document.querySelector("#aboutBtn").classList.remove("hidden")
     anime({
@@ -134,6 +137,7 @@ setTimeout(() => {
 renderExperience(experience)
 renderPublications(publications)
 navBar()
+
 
 const workButtons = document.querySelectorAll(".btn_work")
 
@@ -163,14 +167,15 @@ titulos.forEach(titulo => {
 })
 
 
-ScrollReveal().reveal(".translate-left", {
-    distance: '100px', // Adjust this value as per your requirement
-    origin: 'left',    // Specify the direction from which the element should appear
-    duration: 1000,    // Duration of the animation
-    scale: 1,          // Set the initial scale (1 means no scaling)
-    viewFactor: 0.2,   // Percentage of the element's visibility before the animation is triggered
-    reset: false    
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    Swal.fire(
+        'Thanks for contacting me!',
+        'I will respond as soon as possible.',
+        'success'
+      )
+      formulario.reset()
 })
-ScrollReveal().reveal(".fade-in", {delay:300})
 
 

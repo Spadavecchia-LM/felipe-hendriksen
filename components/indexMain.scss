@@ -1,7 +1,7 @@
 .introduction_container {
   width: 90vw;
   height: 80vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -69,31 +69,32 @@
     background-color: $gray-100;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: space-around;
-    height: 500px;
-    width: 320px;
+    height: 450px;
+    width: 250px;
     margin: 0 auto;
     gap: 15px;
     padding: 20px;
     border-radius: 12px;
 
     & h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: center;
     }
 
     & p {
       text-align: justify;
       padding: 0px 20px;
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: $gray-700;
+      height: 30%;
     }
 
     & img {
       object-fit: cover;
-      height: 50%;
       margin-bottom: 15px;
+      overflow: hidden;
+      height: 50%;
     }
 
     & button {
@@ -140,14 +141,15 @@
 
 .work_cards_container {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   gap: 40px;
   height: 100%;
 
   .work_card {
     height: 300px;
-    width: 300px;
+    width: 250px;
     display: grid;
     place-items: center;
     padding: 20px;
@@ -159,6 +161,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
+      
     }
 
     &:nth-child(2) {
@@ -191,4 +194,103 @@
     color: white;
     border: none;
   }
+}
+.orange {
+  color: #ff7a01;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid #ff7a01;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: #ff7a01;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #ff7a01;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
 }

@@ -1,9 +1,0 @@
-.fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  .translate-left {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }

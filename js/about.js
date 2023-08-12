@@ -3,37 +3,37 @@ const skills = [
         id:"detail",
         skill: "Attention to detail.",
         icon: `<i class="bi bi-search"></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:" Exceptional attention to detail honed through experience, ensuring meticulous accuracy in tasks and data analysis. Proficient in identifying nuances and inconsistencies, contributing to error-free outcomes and effective problem-solving."
     },
     {   
         id:"diligence",
         skill: "Diligence.",
         icon: `<i class="bi bi-check-circle "></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:"Exemplary diligence demonstrated through consistent and dedicated effort in all tasks. A reliable and thorough approach to work, ensuring tasks are completed with precision and commitment. Strong work ethic and proactive mindset contribute to achieving goals and maintaining high-quality standards."
     },
     {
         id:"knowledge",
         skill: "General Knowledge.",
         icon: `<i class="bi bi-globe2"></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:" Broad general knowledge base encompassing diverse subjects and current affairs. A curious and avid learner with a passion for staying informed. Strong foundation to facilitate effective communication and a well-rounded perspective."
     },
     {
         id:"speaker",
         skill: "Fluent speaker of English (C1 Level).",
         icon: `<i class="bi bi-chat-quote"></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:" Fluent English speaker at C1 proficiency level. Effective communication and comprehension skills for seamless interaction in professional and social contexts."
     },
     {
         id:"book",
         skill: "Well-versed in Literature, Comics and Manga & Anime.",
         icon: `<i class="bi bi-book"></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:"Proficient in Literature, Comics, Manga, and Anime. In-depth understanding and appreciation for these mediums, showcasing a diverse cultural insight."
     },
     {
         id:"translate",
         skill: "Can translate from Ancient Greek and Latin with the help of a dictionary",
         icon:`<i class="bi bi-translate"></i>`,
-        brief:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste totam necessitatibus distinctio perferendis accusamus animi minima officia enim. Impedit aut alias dolorem accusantium magni. Sapiente vitae a commodi deleniti!"
+        brief:"Able to translate from Ancient Greek and Latin using dictionary support. Proficient in deciphering and interpreting texts from these classical languages."
     }
  ]
 
@@ -53,17 +53,4 @@ function renderSkills(arr) {
 navBar()
 renderSkills(skills)
 
-const li = document.querySelectorAll(".achievements li")
 
-li.forEach(e => {
-    e.classList.add("fade-in")
-})
-ScrollReveal().reveal(".fade-in", {delay:300, reset:true})
-ScrollReveal().reveal(".translate-left", {
-    distance: '100px', // Adjust this value as per your requirement
-    origin: 'left',    // Specify the direction from which the element should appear
-    duration: 1000,    // Duration of the animation
-    scale: 1,          // Set the initial scale (1 means no scaling)
-    viewFactor: 0.2,   // Percentage of the element's visibility before the animation is triggered
-    reset: true    
-})

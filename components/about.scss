@@ -1,13 +1,12 @@
 .biography_container {
-    height: 90vh;
-    margin: 5vh 0px;
     display: grid;
     place-items: center;
 }
 
 .biography {
+
     width: 90%;
-    margin: 0 5%;
+    margin: 50px 5%;
     display: flex;
     background-color: $gray-100;
 
@@ -52,7 +51,7 @@
 
 .skills_container {
     width: 100vw;
-
+    margin: 100px 0;
 }
 
 .skills_cards_container {
@@ -79,7 +78,7 @@
 .skill-card p{
     font-size: 13px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 @media (max-width:750px){
     .biography_img{

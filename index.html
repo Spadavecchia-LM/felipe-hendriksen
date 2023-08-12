@@ -20,7 +20,6 @@
         <li><a href="https://www.linkedin.com/in/feliglobo/details/publications/" target="_blank"
             class="nav-link">Publications</a></li>
         <li><a href="./pages/about.html" class="nav-link">About Me</a></li>
-        <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -70,29 +69,36 @@
       </div>
     </section>
 
-   
+
   </main>
 
+    <section class="contact_main">
 
-
-  <footer>
-    <section class="contact fade-in">
-      <h2>Contact Me</h2>
+      <div class="form-container">
+        <form class="form" id="contact_form" netlify>
+          <span class="heading">Get in touch</span>
+          <input placeholder="Name" type="text" class="input">
+          <input placeholder="Email" id="mail" type="email" class="input">
+          <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+          <div class="button-container">
+            <button type="submit" class="send-button">Send</button>
+            <div class="reset-button-container">
+              <button type="reset" id="reset-btn" class="reset-button">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
       <div class="social-media">
         <a href="https://www.linkedin.com/in/feliglobo" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://www.instagram.com/feliperodolfohendriksen" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://twitter.com/feliglobo96" target="_blank"><i class="bi bi-twitter"></i></a>
         <a href="mailto:feli_globo@hotmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
       </div>
-      <form class="subscribe">
-        <label for="emailSubscribe">Subscribe to receive my daily posts</label>
-        <input type="email" id="emailSubscribe" placeholder="example@gmail.com">
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
-  </footer>
-
-<script src="https://unpkg.com/scrollreveal"></script>
+        <p>All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
     integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
