@@ -36,12 +36,13 @@ const skills = [
         brief:"Able to translate from Ancient Greek and Latin using dictionary support. Proficient in deciphering and interpreting texts from these classical languages."
     }
  ]
-
+document.querySelectorAll(".title").forEach(title => title.setAttribute("data-aos", "zoom-in"))
+document.querySelectorAll(".achievements li").forEach(li => li.setAttribute("data-aos", "fade-out"))
 
 function renderSkills(arr) {
     arr.forEach(element => {
         document.querySelector(".skills_cards_container").innerHTML += `
-    <div class="skill-card translate-left" data-sr>
+    <div class="skill-card" data-aos="fade-up-left">
     <h2 id=${element.id}>${element.icon}</h2>
     <h4>${element.skill}</h2>
     <p>${element.brief}</p>
@@ -49,7 +50,6 @@ function renderSkills(arr) {
     `
     })
 }
-
 navBar()
 renderSkills(skills)
 

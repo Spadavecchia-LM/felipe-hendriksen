@@ -1,4 +1,4 @@
-
+AOS.init();
 const publications = [
     {
         id: 1,
@@ -99,7 +99,7 @@ function navBar() {
 function renderPublications(arr) {
     arr.forEach(element => {
         document.querySelector(".pub_cards_container").innerHTML += `
-    <div class="pub_card">
+    <div class="pub_card" data-aos="fade-right" data-aos-duration="1000">
     <img src=${element.image} alt=${element.title}>
     <h2>${element.title}</h2>
     <p>${element.description}</p>
@@ -110,7 +110,7 @@ function renderPublications(arr) {
 function renderExperience(arr) {
     arr.forEach(element => {
         document.querySelector(".work_cards_container").innerHTML += `
-        <div class="work_card" id=${element.id}>
+        <div class="work_card" data-aos="flip-up" data-aos-duration="1000" id=${element.id}>
             <h2>${element.task}</h2>
             <h4>${element.where}</h4>
             <span>${element.time}</span>
@@ -163,7 +163,7 @@ function viewWorkInfo() {
 viewWorkInfo()
 
 titulos.forEach(titulo => {
-    titulo.classList.add("fade-in")
+    titulo.setAttribute("data-aos", "zoom-in")
 })
 
 
